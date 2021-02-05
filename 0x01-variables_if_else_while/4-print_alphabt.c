@@ -11,7 +11,7 @@ int main(void)
 {
 	int n;
 
-	for (n = 'a'; n >= 'z'; ++n)
+	for (n = 'a'; n >= 'z'; n++)
 	{
 		while (n != 'q' && n != 'e')
 		{
