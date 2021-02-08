@@ -15,8 +15,11 @@ int main(void)
 		{
 			putchar(n / 10 + '0');
 			putchar(n % 10 + '0');
-			putchar(',');
-			putchar(' ');
+			if (n < 89)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
