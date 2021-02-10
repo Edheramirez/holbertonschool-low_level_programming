@@ -18,3 +18,6 @@ int print_sign(int n);
 
 /*_abs - computes the absolute value of an int*/
 int _abs(int);
+
+/* print_last_digit - PLD*/
+int print_last_digit(int);
