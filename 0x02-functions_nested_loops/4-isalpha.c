@@ -3,7 +3,7 @@
 /**
  * _isalpha - checks for passed character is alphabetic
  *
- * @c: is integer
+ * @c: integer
  *
  * Return: Always 0 (Succes)
  */
