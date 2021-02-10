@@ -1,5 +1,5 @@
-#iFndef HEADER_FILE
-#define HEADER_FILE
+#iFndef HOLBERTON_H
+#define HOLBERTON_H
 
 /* _putchar - Print on screen*/
 int _putchar(char c);
