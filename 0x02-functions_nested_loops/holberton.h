@@ -21,3 +21,6 @@ int _abs(int);
 
 /* print_last_digit - PLD*/
 int print_last_digit(int);
+
+/* void jack_bauer - prints every minute of the day */
+void jack_bauer(void);
