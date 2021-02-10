@@ -1,3 +1,6 @@
+#iFndef HEADER_FILE
+#define HEADER_FILE
+
 /* _putchar - Print on screen*/
 int _putchar(char c);
 
@@ -24,3 +27,5 @@ int print_last_digit(int);
 
 /* void jack_bauer - prints every minute of the day */
 void jack_bauer(void);
+
+#endif
