@@ -9,4 +9,8 @@ int _isdigit(int c);
 
 /* mul - multiplies two int */
 int mul(int a, int b);
+
+/* print_numbers - print numbers from 0-9 and new line */
+void print_numbers(void);
+
 #endif
