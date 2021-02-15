@@ -1,8 +1,8 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef HEADER_H
+#define HEADER_H
 
 /* _putchar - writes the character c to stdout */
-int _putchar(char c)
+int _putchar(char c);
 
 /* int _isupper - checks for uppercase character */
 int _isupper(int c);
@@ -21,4 +21,5 @@ void print_most_numbers(void);
 
 /* more_numbers - prints 10 times the numbers 0-14 and a new line*/
 void more_numbers(void);
+
 #endif
