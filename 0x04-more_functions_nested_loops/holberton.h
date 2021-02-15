@@ -16,4 +16,6 @@ void print_numbers(void);
 /* print_most_numbers - print numbers 0-9 and new line whitout 2 and 4 */
 void print_most_numbers(void);
 
+/* more_numbers - prints 10 times the numbers 0-14 and a new line*/
+void more_numbers(void);
 #endif
