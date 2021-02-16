@@ -1,6 +1,9 @@
 #ifndef HEADER_H
 #define HEADER_H
 
+/* _putchar - writes the character c to stdout */
+int _putchar(char c);
+
 /* takes a pointer an int as parameter and update the value */
 void reset_to_98(int *n);
 
