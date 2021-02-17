@@ -25,4 +25,7 @@ void rev_string(char *s);
 /* puts_half - prints half of a string */
 void puts_half(char *str);
 
+/* puts2 - prints every other char of a str start with first char and new line */
+void puts2(char *str);
+
 #endif
