@@ -28,4 +28,7 @@ void puts_half(char *str);
 /* puts2 - prints every other char of a str start with first char and new line */
 void puts2(char *str);
 
+/* prints half of a string and a new line */
+void puts_half(char *str);
+
 #endif
