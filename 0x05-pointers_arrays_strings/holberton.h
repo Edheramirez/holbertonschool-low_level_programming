@@ -19,4 +19,7 @@ void _puts(char *str);
 /* print_rev - prints a string in reverse and new line */
 void print_rev(char *s);
 
+/* rev_string - reverses a string */
+void rev_string(char *s);
+
 #endif
