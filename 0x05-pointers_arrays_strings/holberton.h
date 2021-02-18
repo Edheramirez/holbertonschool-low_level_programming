@@ -31,4 +31,7 @@ void puts2(char *str);
 /* prints half of a string and a new line */
 void puts_half(char *str);
 
+/* print_array - prints n elements of array of int new line */
+void print_array(int *a, int n);
+
 #endif
