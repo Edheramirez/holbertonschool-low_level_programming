@@ -10,4 +10,7 @@ char *_strcat(char *dest, char *src);
 /* *_strncat - concatenates two strings whitout limit*/
 char *_strncat(char *dest, char *src, int n);
 
+/* *strncpy - copies a string */
+char *_strncpy(char *dest, char *src, int n);
+
 #endif
