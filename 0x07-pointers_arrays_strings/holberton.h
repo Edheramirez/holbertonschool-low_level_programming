@@ -13,4 +13,7 @@ unsigned int _strspn(char *s, char *accept);
 /* *_strpbrk - searches a string for any of a set of bytes*/
 char *_strpbrk(char *s, char *accept);
 
+/* *_strstr - locates a substring finds the first occurrence of the substring */
+char *_strstr(char *haystack, char *needle);
+
 #endif
