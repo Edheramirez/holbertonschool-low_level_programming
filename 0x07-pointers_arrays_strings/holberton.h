@@ -13,7 +13,10 @@ unsigned int _strspn(char *s, char *accept);
 /* *_strpbrk - searches a string for any of a set of bytes*/
 char *_strpbrk(char *s, char *accept);
 
-/* *_strstr - locates a substring finds the first occurrence of the substring */
+/* *_strstr - locates a substring finds the first occurrence of the substringE */
 char *_strstr(char *haystack, char *needle);
+
+/* print_chessboard - prints the chessboard */
+void print_chessboard(char (*a)[8]);
 
 #endif
