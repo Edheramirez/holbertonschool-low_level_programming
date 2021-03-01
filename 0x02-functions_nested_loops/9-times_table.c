@@ -1,12 +1,9 @@
 #include "holberton.h"
 
 /**
- * times_table -  lest do it ***
- *
+ * times_table -  prints 9 tables
  */
-
 void times_table(void)
-
 {
 	int table, number;
 
@@ -22,18 +19,17 @@ void times_table(void)
 				{
 					_putchar(' ');
 					_putchar(' ');
-
+				}
+				_putchar('0' + times);
 			}
 			else
 			{
 				_putchar(' ');
 				_putchar('0' + (times / 10));
 				_putchar('0' + (times % 10));
-
 			}
 			if (number < 9)
 				_putchar(',');
-
 		}
 		_putchar('\n');
 	}
