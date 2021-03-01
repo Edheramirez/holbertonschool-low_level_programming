@@ -24,3 +24,6 @@ int print_last_digit(int);
 
 /* void jack_bauer - prints every minute of the day */
 void jack_bauer(void);
+
+/* prints 9 imes table, starting with 0 */
+void times_table(void);
