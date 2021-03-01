@@ -27,3 +27,6 @@ void jack_bauer(void);
 
 /* prints 9 imes table, starting with 0 */
 void times_table(void);
+
+/* adds two integers and returns the result*/
+int add(int, int);
