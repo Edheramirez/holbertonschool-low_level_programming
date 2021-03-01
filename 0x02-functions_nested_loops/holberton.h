@@ -22,14 +22,14 @@ int _abs(int);
 /* print_last_digit - PLD*/
 int print_last_digit(int);
 
-/* void jack_bauer - prints every minute of the day */
+/* jack_bauer - prints every minute of the day */
 void jack_bauer(void);
 
-/* prints 9 imes table, starting with 0 */
+/* times_table - prints 9 imes table, starting with 0 */
 void times_table(void);
 
-/* adds two integers and returns the result*/
+/* add - adds two integers and returns the result*/
 int add(int, int);
 
-/* prints all natural numbers from n to 98 followed by a new line */
+/* print_to_98 - prints all natural numbers from n to 98 followed by a new line */
 void print_to_98(int n);
