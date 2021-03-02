@@ -7,4 +7,7 @@ char *create_array(unsigned int size, char c);
 /* _strdup - returns a pointer to anew allocated space in memory  */
 char *_strdup(char *str);
 
+/* str_concat - concatenates two strings */
+char *str_concat(char *s1, char *s2);
+
 #endif
