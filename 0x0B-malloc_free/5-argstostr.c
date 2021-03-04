@@ -24,13 +24,13 @@ char *argstostr(int ac, char **av)
 		for (j = 0; av[i][j] != '\0'; j++)
 		{
 		}
-
 		k += j;
 	}
 
-	conc = malloc(sizeof(char) * (k + ac + 1));
+	conc = malloc(sizeof(char) * (k + ac));
 	if (conc == NULL)
 		return (NULL);
+
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
