@@ -34,7 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	lengthsum = length_s1 + length_s2;
 
-	conc = malloc(sizeof(char) * lengthsum);
+	conc = malloc(sizeof(char) * lengthsum + 1);
 
 	if (conc == NULL)
 		return (NULL);
