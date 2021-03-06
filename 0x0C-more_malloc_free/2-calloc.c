@@ -13,11 +13,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int i;
 	char *buffer;
 
-	buffer = malloc(size * nmemb);
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+
+	buffer = malloc(size * nmemb + 1);
 	if (buffer == NULL)
 		return (NULL);
 
-	for (i = 0; size * nmemb > i; i++)
+	for (i = 0; i <= size * nmemb; i++)
 		*(buffer + i) = 0;
 
 	return (buffer);
