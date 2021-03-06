@@ -32,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n <= length_s2)
 		length_s2 = n;
 
-	lengthsum = length_s1 + length_s2 + 1;
+	lengthsum = length_s1 + length_s2;
 
 	conc = malloc(sizeof(char) * lengthsum);
 
