@@ -1,56 +1,67 @@
-#include <stdio.h>
 #include "dog.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * new_dog - creates a new dog.
- * @name: It's name of a pet.
- * @age: It's age of a pet.
- * @owner: It's name of a owner of a pet.
- *
- * Return: pointer to new dog or null if fails.
- */
-dog_t *new_dog(char *name, float age, char *owner)
+ * _strdup - returns a pointer to a newly allocated space in memory
+ * @str: string
+ * Return: a copy of str
+ **/
+char *_strdup(char *str)
 {
-	dog_t *d;
-	int len;
+	unsigned int i = 0, j;
 	char *ptr;
 
-	if (name == 0 || owner == 0)
-		return (NULL);
-
-	d = malloc(sizeof(dog_t));
-	if (d == NULL)
-		return (NULL);
-
-	for (len = 1, ptr = name; *ptr; len++)
-		ptr++;
-
-	d->name = malloc(len);
-	if (d->name == 0)
+	if (str == NULL)
 	{
-		free(d);
 		return (NULL);
 	}
 
-	for (len = 1, ptr = owner; *ptr; len++)
-		ptr++;
-
-	d->owner = malloc(len);
-	if (d->owner == 0)
+	while (str[i] != '\0')
 	{
-		free(d->name);
-		free(d);
+		i++;
+	}
+
+	ptr = malloc(sizeof(char) * (i + 1));
+	if (ptr == NULL)
+	{
 		return (NULL);
 	}
 
-	for (len = 0; *name != 0; len++, name++)
-		d->name[len] = *name;
+	for (j = 0; j <= i; j++)
+	{
+		ptr[j] = str[j];
+	}
+	return (ptr);
+}
 
-	d->name[len] = 0;
-	for (len = 0; *owner != 0; len++)
-		d->owner[len] = *owner++;
+/**
+ * new_dog - a new dog
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
+ * Return: a new dog pointer
+ **/
+dog_t *new_dog(char *name, float age, char *owner)
+{
+	dog_t *n;
 
-	d->owner[len] = 0;
-	d->age = age;
-	return (d);
+	n = malloc(sizeof(dog_t));
+	if (n == NULL)
+		return (NULL);
+	(*n).name = _strdup(name);
+	if ((*n).name == NULL)
+	{
+		free(n);
+		return (NULL);
+	}
+	(*n).owner = _strdup(owner);
+	if ((*n).owner == NULL)
+	{
+		free((*n).name);
+		free(n);
+		return (NULL);
+	}
+	(*n).age = age;
+	return (n);
 }
