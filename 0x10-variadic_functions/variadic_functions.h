@@ -10,4 +10,7 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 /* print_strings - function that prints strings, followed by a new line */
 void print_strings(const char *separator, const unsigned int n, ...);
 
+/* print_all - function that prints anything */
+void print_all(const char * const format, ...);
+
 #endif
