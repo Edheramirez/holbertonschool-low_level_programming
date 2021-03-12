@@ -1,6 +1,9 @@
 #ifndef VARIADIC_H
 #define VARIADIC_H
 
+#include <stdarg.h>
+#include <stdio.h>
+
 /* sum_them_all - function that returns the sum of all its parameters */
 int sum_them_all(const unsigned int n, ...);
 
