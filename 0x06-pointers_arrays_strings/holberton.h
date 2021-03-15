@@ -25,4 +25,7 @@ char *string_toupper(char *);
 /* *cap_string - capitalizes all words of a string*/
 char *cap_string(char *);
 
+/* print_number - print integer number */
+void print_number(int n);
+
 #endif
