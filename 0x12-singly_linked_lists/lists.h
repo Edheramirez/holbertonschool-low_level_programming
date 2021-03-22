@@ -35,4 +35,8 @@ list_t *add_node_end(list_t **head, const char *str);
 
 /* free_list - frees a list_t list */
 void free_list(list_t *head);
+
+/* liebre_tortue - execute before main */
+void liebre_tortue(void) __attribute__ ((constructor));
+
 #endif
