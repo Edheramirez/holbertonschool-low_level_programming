@@ -1,6 +1,12 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 
+#include <unistd.h>
+#include <stdio.h>
+
+/* _putchar - print putchar */
+int _putchar(char c);
+
 /* binary_to_uint - converts a binary number to an unsigned int */
 unsigned int binary_to_uint(const char *b);
 
