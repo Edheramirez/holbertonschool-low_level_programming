@@ -16,15 +16,18 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		return (NULL);
 
 	newnode = malloc(sizeof(dlistint_t)); /*reservespaceinmemorynewnode*/
+	if (newnode == NULL)
+		return (NULL);
+
 	newnode->n = n; /*give data a newnode*/
 
-	if (newnode != NULL)
-	newnode->next = *head; /*new node point to head of old head of a list*/
+	newnode->next = *head; /*newnodepointtoheadofoldheadofalist*/
 
 	if (*head != NULL)
 		(*head)->prev = newnode; /*oldnodepointtonextofnewnodeofalist*/
 
-	/*newnode->prev = NULL; It´s mean it´s the first node*/
+	newnode->prev = /*NULL; It´s mean it´s the first node*/
+
 	*head = newnode;
-	return (newnode);
+	return (*head);
 }
