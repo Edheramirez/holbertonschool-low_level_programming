@@ -26,7 +26,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	if (*head != NULL)
 		(*head)->prev = newnode; /*oldnodepointtonextofnewnodeofalist*/
 
-	newnode->prev = /*NULL; It´s mean it´s the first node*/
+	newnode->prev = NULL; /*It´s mean it´s the first node*/
 
 	*head = newnode;
 	return (*head);
