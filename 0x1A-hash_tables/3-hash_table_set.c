@@ -16,8 +16,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL || key == NULL || value == NULL || *key == '\0')
 		return (0);
-	/*add asing of new element*/
-	index = key_index((unsigned char *)key, ht->size);
+
+	/* Get the index segun la key the key */
+	index = key_index((const unsigned char *)key, ht->size);
 	item = ht->array[index];
 	while (item != NULL)
 	{
@@ -40,7 +41,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(item);
 		return (0);
 	}
-	item->key = strdup(value);
+	item->value = strdup(value);
 	if (item->value == NULL)
 	{
 		free(item->key);
